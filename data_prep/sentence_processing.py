@@ -29,7 +29,7 @@ def yield_tokens(data_iter: Iterable,token_transform):
 def build_vocab(data_series,token_transform,special_symbols):
     data_iterator = yield_tokens(data_series.iteritems(),token_transform)
     vocab = build_vocab_from_iterator(data_iterator,
-                                                        min_freq=2,
+                                                        min_freq=4,
                                                         specials=special_symbols,
                                                         special_first=True)
     vocab.set_default_index(special_symbols.index('<unk>'))
