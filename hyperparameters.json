@@ -1,10 +1,10 @@
 {
-    "emb_size": 64,
-    "n_head": 2,
-    "ffn_hid_dim": 64,
-    "batch_size": 8,
-    "num_encoder_layers": 1,
-    "num_decoder_layers": 1,
-    "num_epochs": 2
+    "emb_size": 512,
+    "n_head": 8,
+    "ffn_hid_dim": 512,
+    "batch_size": 128,
+    "num_encoder_layers": 3,
+    "num_decoder_layers": 3,
+    "num_epochs": 200
 
 }
